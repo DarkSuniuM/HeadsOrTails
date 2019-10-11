@@ -1,0 +1,15 @@
+<html>
+    <head>
+        <title>Heads or Tails - Result</title>
+    </head>
+    <body>
+        Result:
+        {% if heads_or_tails == 1 %}
+            Heads
+        {% elif heads_or_tails == 2 %}
+            Tails
+        {% endif %}
+        <br><br>
+        <a href="{{ url_for('result') }}">Again!?</a>
+    </body>
+</html>
